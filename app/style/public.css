@@ -1,0 +1,64 @@
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei",tahoma,arial,"\5b8b\4f53";-ms-overflow-style:scrollbar}
+button,h1,h2,h3,h4,h5,h6,input,select,textarea{font-size:100%}
+address,cite,dfn,em,var{font-style:normal}
+input,button{outline:none;border:0}
+table{border-collapse: collapse}
+ol,ul,li{list-style:none}
+img{max-width:100%;vertical-align:top}
+a{text-decoration:none}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.hide {
+    display: none;
+}
+.f13 {
+     font-size: 13px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f15 {
+    font-size: 15px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f18 {
+    font-size: 18px;
+}
+.f20 {
+    font-size: 20px;
+}
+.f24 {
+    font-size: 24px;
+}
+.f28 {
+    font-size: 28px;
+}
+.f30 {
+    font-size: 30px;
+}
+.w {
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrap-out {
+    padding-left: -webkit-calc(100vw - 100%);
+    padding-left: -moz-calc(100vw - 100%);
+    padding-left: calc(100vw - 100%);
+}
+.noborder {
+    border: 0;
+}
+.f-red {
+    color: #ff0000;
+}
+

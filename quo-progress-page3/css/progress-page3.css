@@ -1,0 +1,127 @@
+.container {
+    padding: 15px 15px 30px;
+    min-height: 500px;
+    background-color: #f1f2f3;
+}
+.wrap-out {
+    background-color: #fff;
+}
+.step-wrap {
+    margin-top: 10px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.step-wrap ul {
+    margin: 0 35px;
+}
+.step-wrap .step-item {
+    float: left;
+    width: 33.333%;
+    font-size: 18px;
+    color: #838383;
+    line-height: 50px;
+}
+.step-wrap .step-item:nth-child(2) {
+     text-align: center;
+}
+.step-wrap .step-item:nth-child(3) {
+    text-align: right;
+}
+.step-wrap .step-item span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #8d8d8d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.step-wrap .completed {
+    color: #333333;
+}
+.step-wrap .completed span {
+    border: none;
+    background-color: #4a99db;
+    color: #fff;
+}
+.msg-box {
+    margin: 40px 0;
+}
+.msg-box .msg-tit {
+    margin-left: 36px;
+    font-weight: normal;
+    color: #333333;
+}
+.msg-box .msg-tit .msg-tit-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background: url(../images/title-icon.png) no-repeat;
+}
+.list-wrap {
+    margin-left: 55px;
+}
+.list-wrap .list-item {
+    float: left;
+    width: 120px;
+    margin: 24px 28px 15px 0;
+}
+.list-wrap .list-item .pic-box {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+}
+.list-wrap .list-item .pic-box img {
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+.list-wrap .list-item .list-des {
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
+}
+.list-wrap .list-item .list-des .check-btn {
+    display: inline-block;
+    vertical-align: sub;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background: url(../images/checked-icon.png) no-repeat 0 0;
+    cursor: pointer;
+}
+.list-wrap .list-item .list-des .checked {
+    background-position: 0 -20px
+}
+.step-btn {
+    display: block;
+    width: 280px;
+    height: 45px;
+    line-height: 45px;
+    margin: 50px auto 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4d98db;
+    border-bottom: 3px solid #2a6fac;
+    cursor: pointer;
+}
+.step-btn:hover {
+    background-color: #72b3ed;
+}

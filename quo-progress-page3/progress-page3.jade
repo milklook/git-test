@@ -1,0 +1,108 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="content-type" content="text/html")
+        title 乐洗车
+        link(type="text/css" rel="stylesheet" href="../app/style/public.css")
+        link(type="text/css" rel="stylesheet" href="css/progress-page3.css")
+        script(type="text/javascript" src="../app/lib/jquery-1.11.2.min.js")
+    body
+        div.container
+            .wrap-out
+                .w
+                    .content
+                        .step-wrap
+                            mixin list
+                                ul.clearfix
+                                    li.step-item.completed
+                                        span 1
+                                        | 车辆信息填写
+                                    li.step-item
+                                        span 2
+                                        | 选择投保险种
+                                    li.step-item
+                                        span 3
+                                        | 选择投保险企
+                            +list()
+                        .msg-box
+                            h2.msg-tit.f18
+                                i.msg-tit-icon
+                                | 请选择您需要报价的险企
+                            .list-wrap
+                                ul.clearfix
+                                    li.list-item
+                                        .pic-box
+                                            img(src="images/bank-icon-ansheng.jpg" alt="")
+                                        .list-des
+                                            span.check-btn
+                                            span 安盛天平车险
+                                    li.list-item
+                                        .pic-box
+                                            img(src="images/bank-icon-renbao.png" alt="")
+                                        .list-des
+                                            span.check-btn
+                                            span 人保车险
+                                    li.list-item
+                                        .pic-box
+                                            img(src="images/bank-icon-taipingyang.png" alt="")
+                                        .list-des
+                                            span.check-btn
+                                            span 太平洋车险
+                                    li.list-item
+                                        .pic-box
+                                            img(src="images/bank-icon-tianping.png" alt="")
+                                        .list-des
+                                            span.check-btn
+                                            span 天平汽车保险
+                                    li.list-item
+                                        .pic-box
+                                            img(src="images/bank-icon-pingan.png" alt="")
+                                        .list-des
+                                            span.check-btn
+                                            span 平安保险
+                                    li.list-item
+                                        .pic-box
+                                            img(src="images/bank-icon-zgdadi.png" alt="")
+                                        .list-des
+                                            span.check-btn
+                                            span 中国大地车险
+                                    li.list-item
+                                        .pic-box
+                                            img(src="images/bank-icon-tianan.png" alt="")
+                                        .list-des
+                                            span.check-btn
+                                            span 天安保险
+                                button(type="button").step-btn 下一步
+
+        script(type="text/javascript").
+            $(".check-btn").click(function() {
+                if(!$(this).hasClass("checked")) {
+                    $(this).addClass("checked");
+                    return false;
+                }
+                $(this).removeClass("checked");
+            });
+
+
+            $(".step-btn").click(function() {
+                var newStr = "";
+                var checkObj = $(".checked");
+                if(checkObj.length) {
+                    checkObj.each(function() {
+                        newStr += $(this).next().html() + ",";
+                    })
+                    newStr = newStr.substr(0, newStr.length - 1);
+                    console.log(newStr);
+                    return false;
+                }
+                alert("请至少选择一个险企！");
+            })
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+@charset "utf-8";
+/*CSS Document*/
+
+.container {
+    padding: 15px 15px 30px;
+    min-height: 500px;
+    background-color: #f1f2f3;
+}
+.wrap-out {
+    background-color: #fff;
+}
+.overview {
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.overview ul li {
+    float: left;
+    margin-right: 50px;
+    font-size: 18px;
+    color: #333333;
+    line-height: 52px;
+}
+.overview .pic-box, .overview .bank-name {
+    float: left;
+}
+.overview .pic-box {
+    margin-right: 15px;
+}
+.overview .bank-name {
+    color: #030303;
+}
+.overview .platform-price em {
+     color: #ff0000;
+}
+.overview .market-price em {
+    text-decoration: line-through;
+    color: #9e9898;
+}
+
+.msg-box {
+    margin: 40px 0;
+    border-bottom: 1px dashed #a0a0a0;
+}
+.msg-box .msg-tit {
+    font-weight: normal;
+    color: #333333;
+}
+.msg-box .msg-tit .msg-tit-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 24px;
+    margin-right: 15px;
+    background: url(../../app/images/msg-title-icon.png) no-repeat;
+}
+.msg-list {
+    margin-left: 30px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: #333333;
+}
+.msg-list dl {
+    float: left;
+    width: 33.3333%;
+    margin-top: 25px;
+}
+.msg-list dl dt {
+    float: left;
+}
+.msg-table {
+    width: 600px;
+    margin-top: 20px;
+}
+.msg-table .m-table {
+    width: 100%;
+    text-align: center;
+}
+.msg-table .m-table th {
+    font-size: 18px;
+    color: #1a1a1a;
+    line-height: 44px;
+    font-weight: normal;
+    background-color: #f1f1f1;
+}
+.msg-table .m-table td {
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    padding: 40px 0;
+}
+.msg-list .tips {
+    font-size: 14px;
+    margin-top: 15px;
+}
+.msg-box .msg-tit .msg-tit-icon.time-icon {
+    background-position: 0 -28px;
+}
+.msg-list-tit {
+    display: inline-block;
+    min-width: 198px;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1a1a1a;
+    background-color: #eeeeee;
+    border: 1px solid #d2d2d2;
+}
+.msg-list-cont .msg-list-line {
+    float: left;
+    width: 50%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333333;
+}
+.msg-list-cont .msg-list-line * {
+    float: left;
+    margin-right: 5px;
+}
+.msg-list-cont .msg-list-line .line-label {
+    width: 190px;
+    padding-left: 12px;
+    position: relative;
+}
+.msg-list-cont .msg-list-line .line-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 9px;
+    background-color: #1f7acd;
+}
+.msg-list-cont .msg-list-line .line-select {
+    width: 105px;
+}
+.msg-list-cont .msg-list-line .line-price {
+    width: 120px;
+}
+
+.step-btn {
+    display: block;
+    width: 280px;
+    height: 45px;
+    line-height: 45px;
+    margin: 50px auto 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4d98db;
+    border-bottom: 3px solid #2a6fac;
+    cursor: pointer;
+}
+.step-btn:hover {
+    background-color: #72b3ed;
+}

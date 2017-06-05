@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="content-type" content="text/html")
+        title 乐洗车
+        link(type="text/css" rel="stylesheet" href="../app/style/public.css")
+        link(type="text/css" rel="stylesheet" href="css/progress-page2.css")
+        script(type="text/javascript" src="../app/lib/jquery-1.11.2.min.js")
+    body
+        div.container
+            .wrap-out
+                .w
+                    .content
+                        .step-wrap
+                            mixin list
+                                ul.clearfix
+                                    li.step-item.completed
+                                        span 1
+                                        | 车辆信息填写
+                                    li.step-item.completed
+                                        span 2
+                                        | 选择投保险种
+                                    li.step-item
+                                        span 3
+                                        | 选择投保险企
+                            +list()
+                        .msg-box
+                            h2.msg-tit.f18
+                                i.msg-tit-icon
+                                | 选择投保险种
+                            .msg-form
+                                form(autocomplete="off" method="post" action="")#insuranceType
+                                    .line-wrap.selected
+                                        .pic-box.insurance-icon.jiaoqiang-icon
+                                        .item-des
+                                            .item-name 交强险/车船税
+                                            .item-time
+                                                | 生产日期：
+                                                input(type="text" name="factureDate").ipt-txt
+                                        .item-switch
+                                            span.switch-bg
+
+                                    .line-wrap
+                                        .line-wrap-tit 商业险主险
+                                        ul.clearfix
+                                            li
+                                                .pic-box.insurance-icon.cardloss-icon
+                                                .item-des
+                                                    .item-name 车辆损失险
+                                                    .item-select
+                                                        select
+                                                            option
+                                                .item-switch
+                                                    input(type="checkbox" name="carLoss")
+
+                            button(type="button").step-btn 下一步
+
+
+
+
+
+
+
+

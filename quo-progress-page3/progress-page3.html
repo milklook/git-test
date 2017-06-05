@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="content-type" content="text/html"><title>乐洗车</title><link type="text/css" rel="stylesheet" href="../app/style/public.css"><link type="text/css" rel="stylesheet" href="css/progress-page3.css"><script type="text/javascript" src="../app/lib/jquery-1.11.2.min.js"></script></head><body><div class="container"><div class="wrap-out"><div class="w"><div class="content"><div class="step-wrap"><ul class="clearfix"><li class="step-item completed"><span>1</span>车辆信息填写</li><li class="step-item"><span>2</span>选择投保险种</li><li class="step-item"><span>3</span>选择投保险企</li></ul></div><div class="msg-box"><h2 class="msg-tit f18"><i class="msg-tit-icon"></i>请选择您需要报价的险企</h2><div class="list-wrap"><ul class="clearfix"><li class="list-item"><div class="pic-box"><img src="images/bank-icon-ansheng.jpg" alt=""></div><div class="list-des"><span class="check-btn"></span><span>安盛天平车险</span></div></li><li class="list-item"><div class="pic-box"><img src="images/bank-icon-renbao.png" alt=""></div><div class="list-des"><span class="check-btn"></span><span>人保车险</span></div></li><li class="list-item"><div class="pic-box"><img src="images/bank-icon-taipingyang.png" alt=""></div><div class="list-des"><span class="check-btn"></span><span>太平洋车险</span></div></li><li class="list-item"><div class="pic-box"><img src="images/bank-icon-tianping.png" alt=""></div><div class="list-des"><span class="check-btn"></span><span>天平汽车保险</span></div></li><li class="list-item"><div class="pic-box"><img src="images/bank-icon-pingan.png" alt=""></div><div class="list-des"><span class="check-btn"></span><span>平安保险</span></div></li><li class="list-item"><div class="pic-box"><img src="images/bank-icon-zgdadi.png" alt=""></div><div class="list-des"><span class="check-btn"></span><span>中国大地车险</span></div></li><li class="list-item"><div class="pic-box"><img src="images/bank-icon-tianan.png" alt=""></div><div class="list-des"><span class="check-btn"></span><span>天安保险</span></div></li></ul><button type="button" class="step-btn">下一步</button></div></div></div></div></div></div><script type="text/javascript">$(".check-btn").click(function() {
+    if(!$(this).hasClass("checked")) {
+        $(this).addClass("checked");
+        return false;
+    }
+    $(this).removeClass("checked");
+});
+
+
+$(".step-btn").click(function() {
+    var newStr = "";
+    var checkObj = $(".checked");
+    if(checkObj.length) {
+        checkObj.each(function() {
+            newStr += $(this).next().html() + ",";
+        })
+        newStr = newStr.substr(0, newStr.length - 1);
+        console.log(newStr);
+        return false;
+    }
+    alert("请至少选择一个险企！");
+})</script></body></html>
