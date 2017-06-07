@@ -4,4 +4,4 @@ Git has a mutable index called stage. das  sad sa
 Git tracks changes.
 Creating a new branch is quick and simple.
 
-Git is free software
+Git is a free software
